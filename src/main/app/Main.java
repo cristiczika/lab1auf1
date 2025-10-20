@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class Main {
 
     static void main() {
-        IO.println("------- Aufgabe 1 --------");
+        IO.println("\n------- Aufgabe 1 -------");
         int[] grades = {29, 37, 38, 41, 84, 67};
         IO.println(Arrays.toString(GradesUtils.getFailingGrades(grades)));
         IO.println(GradesUtils.getAverage(grades));

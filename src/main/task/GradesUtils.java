@@ -61,9 +61,9 @@ public class GradesUtils {
         int max = 0;
 
         for (int i = 0; i < grades.length; i++) {
-            int r = roundGrade(grades[i]);
-            if (r > max) {
-                max = r;
+            int rounded = roundGrade(grades[i]);
+            if (rounded > max) {
+                max = rounded;
             }
         }
 
