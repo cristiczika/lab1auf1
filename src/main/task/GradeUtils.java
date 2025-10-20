@@ -21,4 +21,15 @@ public class GradeUtils {
         return result;
     }
 
+    public static double getAverage(int[] grades) {
+        int sum = 0;
+
+        for (int i = 0; i < grades.length; i++) {
+            sum += grades[i];
+        }
+
+        double average = (double) sum / grades.length;
+        return Math.round(average * 100.0) / 100.0;
+    }
+
 }
