@@ -32,4 +32,29 @@ public class GradeUtils {
         return Math.round(average * 100.0) / 100.0;
     }
 
+    private static int roundGrade(int grade) {
+        if (grade < 38) {
+            return grade;
+        }
+
+        int remainder = grade % 5;
+        int nextMultiple = grade + (5 - remainder);
+
+        if (nextMultiple - grade < 3) {
+            return nextMultiple;
+        } else {
+            return grade;
+        }
+    }
+
+    public static int[] getRoundedGrades(int[] grades) {
+        int[] result = new int[grades.length];
+
+        for (int i = 0; i < grades.length; i++) {
+            result[i] = roundGrade(grades[i]);
+        }
+
+        return result;
+    }
+
 }
