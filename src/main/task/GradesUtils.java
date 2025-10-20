@@ -1,6 +1,6 @@
 package main.task;
 
-public class GradeUtils {
+public class GradesUtils {
 
     public static int[] getFailingGrades(int[] grades) {
         int count = 0;
