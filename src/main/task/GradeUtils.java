@@ -57,4 +57,17 @@ public class GradeUtils {
         return result;
     }
 
+    public static int getMaxRoundedGrade(int[] grades) {
+        int max = 0;
+
+        for (int i = 0; i < grades.length; i++) {
+            int r = roundGrade(grades[i]);
+            if (r > max) {
+                max = r;
+            }
+        }
+
+        return max;
+    }
+
 }
